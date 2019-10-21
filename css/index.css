@@ -1,0 +1,212 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+.main-content {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+}
+img {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+html {
+  font-size: 62.5%;
+  margin: 0 auto;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+h1,
+h2,
+h3,
+p,
+a,
+button {
+  font-family: 'Neue' Helvetica, monospace;
+}
+@media screen and (max-width: 1680px) {
+  #footer {
+    bottom: 3.5em;
+    left: 3.5em;
+  }
+}
+@media screen and (max-width: 736px) {
+  #footer {
+    bottom: 2em;
+    left: 2em;
+  }
+}
+@media screen and (max-width: 360px) {
+  #footer {
+    bottom: 1.25em;
+    left: 1.25em;
+  }
+}
+@media screen and (max-height: 640px) {
+  #footer {
+    bottom: auto;
+    left: auto;
+    margin: 1em 0 0 0;
+    position: relative;
+  }
+}
+.header {
+  position: absolute;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  height: 50%;
+  background-color: #2D3F44;
+}
+.footer a {
+  margin: 0 20px;
+}
+img {
+  width: 100%;
+  background-size: 100%;
+  position: relative;
+}
+.middle-box {
+  position: absolute;
+}
+header .foodie-button {
+  background-color: #E66F25;
+}
+.middle-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: justify;
+}
