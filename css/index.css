@@ -124,27 +124,37 @@ a img {
 :focus {
   outline: 0;
 }
-.main-content {
-  width: 100%;
-  margin: 0 auto;
-  position: absolute;
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", monospace;
+}
+.mySlides {
+  display: none;
 }
 img {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
+  vertical-align: middle;
+}
+body {
+  color: white;
+}
+.middle-box {
+  display: flex;
+  flex-direction: row;
 }
 html {
   font-size: 62.5%;
   margin: 0 auto;
+  height: 100%;
 }
-p {
-  line-height: 1.5;
-  font-size: 1.6rem;
+.lower-text {
+  font-size: 12px;
 }
 a {
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 20px;
+  color: white;
 }
 h1,
 h2,
@@ -152,61 +162,213 @@ h3,
 p,
 a,
 button {
-  font-family: 'Neue' Helvetica, monospace;
+  font-family: "Roboto", monospace;
 }
+.logo {
+  width: 100px;
+}
+.center-logo {
+  width: 30%;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: #2b444b;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.footer a {
+  margin: 2px;
+}
+.footer p {
+  font-size: 12px;
+  margin-bottom: 1%;
+}
+footer {
+  width: 500px;
+  height: 200px;
+  flex-direction: row;
+}
+footer p {
+  font-size: 1.2rem;
+  margin: 15px 30px;
+}
+footer a {
+  margin: 15px 30px;
+  color: white;
+  height: 30px;
+}
+footer a:hover {
+  color: #E76F25;
+}
+footer a:active {
+  color: white;
+}
+body {
+  background-attachment: fixed;
+  background-image: url("../img/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+}
+.main-body {
+  width: 100%;
+}
+.main-content {
+  width: 100%;
+  height: 20%;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+.navbar .navright {
+  margin-right: 10%;
+  font-size: 20px;
+  width: 150px;
+}
+.navbar .signup {
+  background: #E76F25;
+  width: 20%;
+  border-radius: 5px;
+}
+.navbar a {
+  font-size: 15px;
+  padding: 5%;
+}
+.middle-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10%;
+}
+.middle-box p {
+  font-size: 20px;
+}
+.middle-box .center-logo {
+  margin: 2%;
+  width: 20%;
+}
+.middle-box .foodie-button {
+  color: white;
+  font-size: 20px;
+  width: 250px;
+  background: #E76F25;
+  border-radius: 5px;
+}
+.middle-box .foodie-button.a {
+  background: #E76F25;
+  width: 200px;
+}
+.slider-box {
+  margin-top: 2%;
+}
+.slideshow-container {
+  width: 40%;
+  margin: auto;
+  border: 2px solid #2b444b;
+  border-radius: 30px;
+}
+.mySlides img {
+  border-radius: 30px;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
 @media screen and (max-width: 1680px) {
-  #footer {
+  html {
+    height: 80%;
+  }
+  .slider-box {
+    margin-top: 2%;
+    margin-bottom: 8%;
+  }
+  .slideshow-container {
+    width: 40%;
+    margin: auto;
+    border: 2px solid #2b444b;
+    border-radius: 30px;
+  }
+  .footer {
     bottom: 3.5em;
     left: 3.5em;
   }
 }
 @media screen and (max-width: 736px) {
-  #footer {
+  html {
+    height: 80%;
+  }
+  .slider-box {
+    margin-top: 2%;
+    margin-bottom: 8%;
+  }
+  .slideshow-container {
+    width: 60%;
+    margin: auto;
+    border: 2px solid #2b444b;
+    border-radius: 30px;
+  }
+  .footer {
     bottom: 2em;
     left: 2em;
   }
 }
 @media screen and (max-width: 360px) {
-  #footer {
+  .slideshow-container {
+    width: 80%;
+    margin: auto;
+    border: 2px solid #2b444b;
+    border-radius: 30px;
+  }
+  .footer {
     bottom: 1.25em;
     left: 1.25em;
   }
 }
 @media screen and (max-height: 640px) {
-  #footer {
+  .footer {
     bottom: auto;
     left: auto;
     margin: 1em 0 0 0;
     position: relative;
   }
 }
-.header {
-  position: absolute;
+.lower-text p {
+  font-size: 15px;
 }
-.footer {
-  width: 100%;
-  display: flex;
-  flex-wrap: no-wrap;
-  justify-content: flex-start;
-  height: 50%;
-  background-color: #2D3F44;
-}
-.footer a {
-  margin: 0 20px;
-}
-img {
-  width: 100%;
-  background-size: 100%;
-  position: relative;
-}
-.middle-box {
-  position: absolute;
-}
-header .foodie-button {
-  background-color: #E66F25;
-}
-.middle-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: justify;
+.lower-text a {
+  text-decoration: underline;
+  font-size: 15px;
 }

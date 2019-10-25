@@ -1,29 +1,42 @@
+* {
+   box-sizing: border-box;
+}
 
-.main-content {
-   width: 100%;
-   margin: 0 auto;
-   position: absolute;
+body {
+   font-family: "Roboto", monospace;
+}
+
+.mySlides {
+   display: none;
 }
 
 img {
-   width: 100%;
-   margin: 0 auto;
-   position: relative;
+   vertical-align: middle;
+}
+
+body {
+   color: white;
+}
+
+.middle-box {
+   display: flex;
+   flex-direction: row;
 }
 
 html {
    font-size: 62.5%;
    margin: 0 auto;
+   height: 100%;
 }
 
-p {
-   line-height: 1.5;
-   font-size: 1.6rem;
+.lower-text {
+   font-size: 12px;
 }
 
 a {
    text-decoration: none;
-   font-size: 1.8rem;
+   font-size: 20px;
+   color: white;
 }
 
 h1,
@@ -32,35 +45,5 @@ h3,
 p,
 a,
 button {
-   font-family: 'Neue' Helvetica, monospace;
-}
-
-@media screen and (max-width: 1680px) {
-   #footer {
-      bottom: 3.5em;
-      left: 3.5em;
-   }
-}
-
-@media screen and (max-width: 736px) {
-   #footer {
-      bottom: 2em;
-      left: 2em;
-   }
-}
-
-@media screen and (max-width: 360px) {
-   #footer {
-      bottom: 1.25em;
-      left: 1.25em;
-   }
-}
-
-@media screen and (max-height: 640px) {
-   #footer {
-      bottom: auto;
-      left: auto;
-      margin: 1em 0 0 0;
-      position: relative;
-   }
+   font-family: "Roboto", monospace;
 }
