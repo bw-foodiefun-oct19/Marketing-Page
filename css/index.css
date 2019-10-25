@@ -188,26 +188,6 @@ button {
   font-size: 12px;
   margin-bottom: 1%;
 }
-footer {
-  width: 500px;
-  height: 200px;
-  flex-direction: row;
-}
-footer p {
-  font-size: 1.2rem;
-  margin: 15px 30px;
-}
-footer a {
-  margin: 15px 30px;
-  color: white;
-  height: 30px;
-}
-footer a:hover {
-  color: #E76F25;
-}
-footer a:active {
-  color: white;
-}
 body {
   background-attachment: fixed;
   background-image: url("../img/landing-page.jpg");
@@ -307,7 +287,7 @@ body {
   }
 }
 /* On smaller screens, decrease text size */
-@media screen and (max-width: 1680px) {
+@media (max-width: 800px) {
   html {
     height: 80%;
   }
@@ -326,7 +306,7 @@ body {
     left: 3.5em;
   }
 }
-@media screen and (max-width: 736px) {
+@media (max-width: 500px) {
   html {
     height: 80%;
   }
@@ -344,31 +324,4 @@ body {
     bottom: 2em;
     left: 2em;
   }
-}
-@media screen and (max-width: 360px) {
-  .slideshow-container {
-    width: 80%;
-    margin: auto;
-    border: 2px solid #2b444b;
-    border-radius: 30px;
-  }
-  .footer {
-    bottom: 1.25em;
-    left: 1.25em;
-  }
-}
-@media screen and (max-height: 640px) {
-  .footer {
-    bottom: auto;
-    left: auto;
-    margin: 1em 0 0 0;
-    position: relative;
-  }
-}
-.lower-text p {
-  font-size: 15px;
-}
-.lower-text a {
-  text-decoration: underline;
-  font-size: 15px;
 }
